@@ -1,4 +1,4 @@
-## Character Builder (Logic-Only RPG System)
+# Character Builder (Logic-Only RPG System)
 
 A logic-only RPG Character Builder written in C++, designed as a portfolio project to demonstrate gameplay systems design, clean data structures, and user-driven flow without engine or UI dependencies.
 
@@ -22,7 +22,7 @@ View the final character sheet via console output
 
 All logic is implemented in a single, self-contained C++ system with no engine-specific dependencies.
 
-## Design Goals
+# Design Goals
 
 Demonstrate gameplay system logic, not UI
 
@@ -38,16 +38,16 @@ Different stat systems
 
 Engine-level UI later
 
-## System Architecture
-Core Data Types
+# System Architecture
+## Core Data Types
 
-# Enums
+### Enums
 
 ERace – Defines playable races
 
 EClass – Defines playable classes
 
-# Structs
+### Structs
 
 FAttributes – Holds character stats (STR, DEX, CON, INT, WIS, CHA)
 
@@ -63,7 +63,7 @@ FCharacterCreator
 
 Orchestrates the full character creation flow
 
-# Handles:
+### Handles:
 
 Input validation
 
@@ -73,7 +73,7 @@ Data application
 
 Output formatting
 
-## Character Creation Flow
+# Character Creation Flow
 
 Player enters a character name
 
@@ -91,9 +91,9 @@ Player allocates 10 attribute points
 
 Final character sheet is displayed
 
-## Attribute System
+Attribute System
 
-# Six core attributes:
+### Six core attributes:
 
 Strength
 
@@ -115,7 +115,7 @@ Each point increases a chosen stat by +1
 
 Input is validated to prevent invalid selections
 
-## Input Validation
+# Input Validation
 
 All player input uses:
 
@@ -127,7 +127,7 @@ Input buffer flushing using std::cin.ignore()
 
 This ensures the system remains stable even with invalid input.
 
-## Example Use Case
+# Example Use Case
 
 This system can be reused as:
 
@@ -143,7 +143,7 @@ Character progression
 
 Multiplayer stat syncing
 
-## Possible Extensions
+# Possible Extensions
 
 Separate files (.h / .cpp) for scalability
 
@@ -157,7 +157,7 @@ Serialization (save/load characters)
 
 Engine integration (UE5 / Blueprint exposure)
 
-## Build & Run
+# Build & Run
 
 This is a standard C++ console application.
 
@@ -167,7 +167,7 @@ Compile with any modern C++ compiler:
 g++ CharacterBuilder.cpp -o CharacterBuilder
 ./CharacterBuilder
 ```
-## Author
+# Author
 
 Kaden
 Gameplay Systems & Game Development Portfolio Project
